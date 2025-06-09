@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 10;
+    padding: 10;
+    background: #f4f4f4;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Layout Structure */
+main {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Content + Sidebar */
+    gap: 20px;
+}
+
+/* Content & Sidebar Styling */
+.content, .sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+    
+    main {
+        grid-template-columns: 2fr 1fr; /* Equal content/sidebar */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+
+    .sidebar {
+        display: none; /* Hide sidebar for small screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        padding: 15px;
+        font-size: 14px; /* Adjust text size */
+    }
+}
