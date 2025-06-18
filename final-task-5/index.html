@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSmart - Modern E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                ShopSmart
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#products" class="nav-link">
+                    <i class="fas fa-store"></i> Products
+                </a>
+                <a href="#categories" class="nav-link">
+                    <i class="fas fa-th-list"></i> Categories
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+            </div>
+            <div class="cart-container">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=600" alt="Shopping Experience">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=600" alt="Fashion Retail">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=600" alt="Tech Gadgets">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h1>Welcome to ShopSmart</h1>
+                <p>Discover amazing products at great prices</p>
+                <a href="#products" class="cta-button">
+                    <i class="fas fa-shopping-basket"></i>
+                    Shop Now
+                </a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="section-header">
+                <h2><i class="fas fa-store"></i> Our Products</h2>
+                <p>Browse through our collection of quality products</p>
+            </div>
+            <div class="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="categories" class="categories-section">
+            <div class="section-header">
+                <h2><i class="fas fa-th-list"></i> Shop by Category</h2>
+                <p>Find what you need in our organized categories</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Gaming & Entertainment">
+                    <div class="category-content">
+                        <h3>Gaming & Entertainment</h3>
+                        <p>Latest gaming gear and accessories</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Audio & Sound">
+                    <div class="category-content">
+                        <h3>Audio & Sound</h3>
+                        <p>Premium audio equipment</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Computers & Laptops">
+                    <div class="category-content">
+                        <h3>Computers & Laptops</h3>
+                        <p>High-performance computing solutions</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Smart Home">
+                    <div class="category-content">
+                        <h3>Smart Home</h3>
+                        <p>Connected home devices and automation</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1526876798423-97e53fb23428?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Accessories">
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                        <p>Essential tech accessories and gadgets</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Computer Components">
+                    <div class="category-content">
+                        <h3>Computer Components</h3>
+                        <p>Build and upgrade your PC</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2><i class="fas fa-info-circle"></i> About Us</h2>
+                <p>Your trusted shopping destination</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <i class="fas fa-truck-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your products delivered quickly and safely</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Shopping</h3>
+                    <p>Your transactions are protected and secure</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer service team is always here to help</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-store"></i> About ShopSmart</h3>
+                <p>ShopSmart is your one-stop destination for quality electronics and tech products at great prices. We pride ourselves on offering the latest technology with exceptional customer service.</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> contact@shopmart.com</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-share-alt"></i> Connect With Us</h3>
+                <p>Stay updated with our latest products and offers</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopSmart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+                <button class="close-cart" aria-label="Close cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Empty cart message -->
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>Your cart is empty</p>
+                </div>
+                <!-- Cart items will be dynamically loaded here -->
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="checkout-btn">
+                <i class="fas fa-credit-card"></i>
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+</body>
+</html> 
